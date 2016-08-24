@@ -1,0 +1,6 @@
+D:\Sanchez Juan\TerceraCLase\Clase3\Clase 3\bin\Debug\Clase 3.exe.config
+D:\Sanchez Juan\TerceraCLase\Clase3\Clase 3\bin\Debug\Clase 3.exe
+D:\Sanchez Juan\TerceraCLase\Clase3\Clase 3\bin\Debug\Clase 3.pdb
+D:\Sanchez Juan\TerceraCLase\Clase3\Clase 3\obj\Debug\Ejercicio1.csprojResolveAssemblyReference.cache
+D:\Sanchez Juan\TerceraCLase\Clase3\Clase 3\obj\Debug\Clase 3.exe
+D:\Sanchez Juan\TerceraCLase\Clase3\Clase 3\obj\Debug\Clase 3.pdb
