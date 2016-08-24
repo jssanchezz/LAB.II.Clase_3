@@ -13,7 +13,7 @@ namespace Clase_3
         public Rueda DD;
         public Rueda TI;
         public Rueda TT;
-        private int kilometrosRecorridos;
+        public int kilometrosRecorridos;
         
         public static int contadorDeObjetos;
         private static Random randomMarcas;

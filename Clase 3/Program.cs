@@ -19,9 +19,11 @@ namespace Clase_3
 
             //Rueda nuevarueda = new Rueda();*/
 
-            Carrera nuevacarrera = new Carrera();
+            Rueda otrarueda = new Rueda(39);
 
-            nuevacarrera.MostrarCarrera();
+            //Carrera nuevacarrera = new Carrera();
+
+            //nuevacarrera.MostrarCarrera();
 
             Console.ReadKey();
         }

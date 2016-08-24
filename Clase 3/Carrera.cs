@@ -35,7 +35,7 @@ namespace Clase_3
         public void PorTiempo(int minutos)
         {
             int contador;
-
+            
             for (contador = 0; contador < minutos; contador++)
             {
                 this.auto1.agregarKilometro(randomKilometros.Next(0, 100));
@@ -46,6 +46,7 @@ namespace Clase_3
                 this.auto6.agregarKilometro(randomKilometros.Next(0, 100));
             }
 
+            
         }
 
         public void MostrarResultadosCarrera()
