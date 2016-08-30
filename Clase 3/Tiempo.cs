@@ -15,7 +15,6 @@ namespace Clase_3
             this._cantidad = cant;
         }
 
-
         //SOBRECARGA DE OPERADORES
         public static Tiempo operator +(Tiempo tiempoAux, int valor)
         {

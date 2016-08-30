@@ -21,8 +21,6 @@ namespace Clase_3
         
         public Auto() //Constructor de instancia
         {
-            //Random rand = new Random();
-            //int num = rand.Next(0, 4);
             this.Fabricante = (eFabricante) randomMarcas.Next(0,3);
             this.DI = new Rueda();
             this.DD = new Rueda();
@@ -40,7 +38,7 @@ namespace Clase_3
             return false;
         }
 
-        static Auto() //Constructor estàtico
+        static Auto() //Constructor estàtico, este se ejecuta una sola vez
         {
             Auto.contadorDeObjetos = 0;
             Auto.randomMarcas = new Random();
@@ -52,22 +50,6 @@ namespace Clase_3
             Console.WriteLine("Kilometros recorridos: " + (int)this.kilometrosRecorridos);
             Console.WriteLine("Tiempo demorado: " + (int)this.tiempoDemorado);
         }
-
-        /*public void volverACero()
-        {
-            this.kilometrosRecorridos = 0;
-            this.tiempoDemorado = 0;
-        }*/
-
-        /*public void agregarKilometro(int kilometros)
-        {
-            this.kilometrosRecorridos += kilometros;
-        }
-
-        public void agregarTiempo(int tiempo)
-        {
-            this.tiempoDemorado += tiempo;
-        }*/
 
         public void agregar(Tiempo time)
         {

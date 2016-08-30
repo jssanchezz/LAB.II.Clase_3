@@ -33,55 +33,7 @@ namespace Clase_3
             randomKilometros = new Random();
             randomTiempo = new Random();
         }
-
-        /*public void PorTiempo(int minutos)
-        {
-            int contador;
-            
-            for (contador = 0; contador < minutos; contador++)
-            {
-                this.auto1.agregarKilometro(randomKilometros.Next(0, 100));
-                this.auto2.agregarKilometro(randomKilometros.Next(0, 100));
-                this.auto3.agregarKilometro(randomKilometros.Next(0, 100));
-                this.auto4.agregarKilometro(randomKilometros.Next(0, 100));
-                this.auto5.agregarKilometro(randomKilometros.Next(0, 100));
-                this.auto6.agregarKilometro(randomKilometros.Next(0, 100));
-            }
-
-            
-        }
-
-        public void correrCarrera(Kilometros km)
-        {
-            int contador;
-
-            for (contador = 0 ; contador < km.cantidad ; contador ++)
-            {
-                this.auto1.agregarKilometro(randomKilometros.Next(10,100));
-                this.auto2.agregarKilometro(randomKilometros.Next(10,100));
-                this.auto3.agregarKilometro(randomKilometros.Next(10,100));
-                this.auto4.agregarKilometro(randomKilometros.Next(10,100));
-                this.auto5.agregarKilometro(randomKilometros.Next(10,100));
-                this.auto6.agregarKilometro(randomKilometros.Next(10,100));
-            }
-
-        }
-
-        public void correrCarrera(Tiempo time)
-        {
-            int contador;
-            
-            for( contador = 0; contador < time.cantidad ; contador++)
-            {
-                this.auto1.agregarTiempo(randomTiempo.Next(10,100));
-                this.auto2.agregarTiempo(randomTiempo.Next(10,100));
-                this.auto3.agregarTiempo(randomTiempo.Next(10,100));
-                this.auto4.agregarTiempo(randomTiempo.Next(10,100));
-                this.auto5.agregarTiempo(randomTiempo.Next(10,100));
-                this.auto6.agregarTiempo(randomTiempo.Next(10,100));
-            }
-        }*/
-
+        
         public void correrCarrera(Tiempo time)
         {
             int contador;
@@ -96,7 +48,6 @@ namespace Clase_3
                 this.auto5.agregar(timeAux = randomTiempo.Next(10, 100));
                 this.auto6.agregar(timeAux = randomTiempo.Next(10, 100));
             }
-            this.MostrarCarrera();
         }
 
         public void correrCarrera(Kilometros km)
@@ -113,7 +64,6 @@ namespace Clase_3
                 this.auto5.agregar(auxKm = randomKilometros.Next(10, 100));
                 this.auto6.agregar(auxKm = randomKilometros.Next(10, 100));
             }
-            this.MostrarCarrera();
         }
 
         public void MostrarCarrera()

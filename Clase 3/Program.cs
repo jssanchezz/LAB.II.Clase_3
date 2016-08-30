@@ -20,6 +20,8 @@ namespace Clase_3
             nuevacarrera.correrCarrera(time);
             nuevacarrera.correrCarrera(km);
 
+            nuevacarrera.MostrarCarrera();
+
             Console.ReadKey();
         }
     }
