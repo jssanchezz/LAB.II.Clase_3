@@ -10,8 +10,6 @@ namespace Clase_3
     {
         static void Main(string[] args)
         {
-           
-
             Carrera nuevacarrera = new Carrera();
 
             Tiempo time = 20;
