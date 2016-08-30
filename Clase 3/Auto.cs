@@ -13,8 +13,8 @@ namespace Clase_3
         public Rueda DD;
         public Rueda TI;
         public Rueda TT;
-        private int kilometrosRecorridos;
-        private int tiempoDemorado;
+        private Kilometros kilometrosRecorridos;
+        private Tiempo tiempoDemorado;
 
         public static int contadorDeObjetos;
         private static Random randomMarcas;
@@ -51,13 +51,13 @@ namespace Clase_3
             Console.WriteLine("Tiempo demorado: " + this.tiempoDemorado);
         }
 
-        public void volverACero()
+        /*public void volverACero()
         {
             this.kilometrosRecorridos = 0;
             this.tiempoDemorado = 0;
-        }
+        }*/
 
-        public void agregarKilometro(int kilometros)
+        /*public void agregarKilometro(int kilometros)
         {
             this.kilometrosRecorridos += kilometros;
         }
@@ -65,6 +65,16 @@ namespace Clase_3
         public void agregarTiempo(int tiempo)
         {
             this.tiempoDemorado += tiempo;
+        }*/
+
+        public void agregar(Tiempo time)
+        {
+            this.tiempoDemorado = this.tiempoDemorado + time;
+        }
+
+        public void agregar(Kilometros km)
+        {
+            this.kilometrosRecorridos = this.kilometrosRecorridos + km;
         }
     }
 }

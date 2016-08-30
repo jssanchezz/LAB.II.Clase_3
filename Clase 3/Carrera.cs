@@ -34,7 +34,7 @@ namespace Clase_3
             randomTiempo = new Random();
         }
 
-        public void PorTiempo(int minutos)
+        /*public void PorTiempo(int minutos)
         {
             int contador;
             
@@ -70,7 +70,7 @@ namespace Clase_3
         public void correrCarrera(Tiempo time)
         {
             int contador;
-
+            
             for( contador = 0; contador < time.cantidad ; contador++)
             {
                 this.auto1.agregarTiempo(randomTiempo.Next(10,100));
@@ -80,7 +80,7 @@ namespace Clase_3
                 this.auto5.agregarTiempo(randomTiempo.Next(10,100));
                 this.auto6.agregarTiempo(randomTiempo.Next(10,100));
             }
-        }
+        }*/
 
         public void MostrarResultadosCarrera()
         {

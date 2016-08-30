@@ -16,3 +16,9 @@ C:\Users\Juan\Downloads\LAB.II.Clase_3-master\Clase 3\obj\Debug\Clase 3.pdb
 C:\Users\Juan\Downloads\LAB.II.Clase_3-master\Clase 3\obj\Debug\Ejercicio1.csprojResolveAssemblyReference.cache
 C:\Users\Juan\Downloads\LAB.II.Clase_3-master\Clase 3\bin\Debug\Clase 3.exe
 C:\Users\Juan\Downloads\LAB.II.Clase_3-master\Clase 3\bin\Debug\Clase 3.pdb
+D:\Sanchez Juan\LAB.II.Clase_3\LAB.II.Clase_3\Clase 3\bin\Debug\Clase 3.exe.config
+D:\Sanchez Juan\LAB.II.Clase_3\LAB.II.Clase_3\Clase 3\obj\Debug\Clase 3.exe
+D:\Sanchez Juan\LAB.II.Clase_3\LAB.II.Clase_3\Clase 3\obj\Debug\Clase 3.pdb
+D:\Sanchez Juan\LAB.II.Clase_3\LAB.II.Clase_3\Clase 3\bin\Debug\Clase 3.exe
+D:\Sanchez Juan\LAB.II.Clase_3\LAB.II.Clase_3\Clase 3\bin\Debug\Clase 3.pdb
+D:\Sanchez Juan\LAB.II.Clase_3\LAB.II.Clase_3\Clase 3\obj\Debug\Ejercicio1.csprojResolveAssemblyReference.cache

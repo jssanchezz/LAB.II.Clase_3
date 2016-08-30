@@ -21,7 +21,7 @@ namespace Clase_3
 
             //Rueda otrarueda = new Rueda(39);
 
-            Carrera nuevacarrera = new Carrera();
+            /*Carrera nuevacarrera = new Carrera();
 
             Tiempo nuevotiempo = new Tiempo(30);
 
@@ -33,9 +33,7 @@ namespace Clase_3
 
             nuevacarrera.MostrarCarrera();
 
-            nuevotiempo = nuevotiempo + 10;
-
-            Console.Write(nuevotiempo.cantidad);
+            nuevotiempo = nuevotiempo + 10;*/
 
             //nuevacarrera.MostrarCarrera();
 
