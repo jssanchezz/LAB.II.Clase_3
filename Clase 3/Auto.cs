@@ -28,6 +28,8 @@ namespace Clase_3
             this.DD = new Rueda();
             this.TI = new Rueda();
             this.TT = new Rueda();
+            kilometrosRecorridos = 0;
+            tiempoDemorado = 0;
             Auto.contadorDeObjetos++;
         }
 
@@ -47,8 +49,8 @@ namespace Clase_3
         public void MostrarAuto()
         {
             Console.WriteLine("El fabricante es: " + this.Fabricante);
-            Console.WriteLine("Kilometros recorridos: " + this.kilometrosRecorridos);
-            Console.WriteLine("Tiempo demorado: " + this.tiempoDemorado);
+            Console.WriteLine("Kilometros recorridos: " + (int)this.kilometrosRecorridos);
+            Console.WriteLine("Tiempo demorado: " + (int)this.tiempoDemorado);
         }
 
         /*public void volverACero()

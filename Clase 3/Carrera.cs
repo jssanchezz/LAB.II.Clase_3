@@ -84,7 +84,34 @@ namespace Clase_3
 
         public void correrCarrera(Tiempo time)
         {
-                        
+            int contador;
+            Tiempo timeAux = 0;
+
+            for (contador = 0; contador < (int)time; contador++)
+            {
+                this.auto1.agregar(timeAux = randomTiempo.Next(10, 100));
+                this.auto2.agregar(timeAux = randomTiempo.Next(10, 100));
+                this.auto3.agregar(timeAux = randomTiempo.Next(10, 100));
+                this.auto4.agregar(timeAux = randomTiempo.Next(10, 100));
+                this.auto5.agregar(timeAux = randomTiempo.Next(10, 100));
+                this.auto6.agregar(timeAux = randomTiempo.Next(10, 100));
+            }
+        }
+
+        public void correrCarrera(Kilometros km)
+        {
+            int contador;
+            Kilometros auxKm = 0;
+
+            for (contador = 0; contador < (int)km; contador++)
+            {
+                this.auto1.agregar(auxKm = randomKilometros.Next(10, 100));
+                this.auto2.agregar(auxKm = randomKilometros.Next(10, 100));
+                this.auto3.agregar(auxKm = randomKilometros.Next(10, 100));
+                this.auto4.agregar(auxKm = randomKilometros.Next(10, 100));
+                this.auto5.agregar(auxKm = randomKilometros.Next(10, 100));
+                this.auto6.agregar(auxKm = randomKilometros.Next(10, 100));
+            }
         }
 
         public void MostrarCarrera()

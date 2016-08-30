@@ -8,63 +8,91 @@ namespace Clase_3
 {
     public class Tiempo
     {
-        public int cantidad;
+        private int _cantidad; //Cuando tenemos un atributo privado le colocamos un "_" para saber que es privado al momento de usarlo
 
-        public Tiempo(int cant)
+        private Tiempo(int cant)
         {
-            this.cantidad = cant;
+            this._cantidad = cant;
         }
 
 
         //SOBRECARGA DE OPERADORES
         public static Tiempo operator +(Tiempo tiempoAux, int valor)
         {
-            tiempoAux.cantidad = tiempoAux.cantidad + valor;
+            tiempoAux._cantidad = tiempoAux._cantidad + valor;
             return tiempoAux;
         }
 
         public static Tiempo operator +(Tiempo tiempoAux, Tiempo time)
         {
-            tiempoAux.cantidad = tiempoAux.cantidad + time.cantidad;
+            tiempoAux._cantidad = tiempoAux._cantidad + time._cantidad;
             return tiempoAux;
         }
 
         public static Tiempo operator -(Tiempo tiempoAux, int valor)
         {
-            tiempoAux.cantidad = tiempoAux.cantidad - valor;
+            tiempoAux._cantidad = tiempoAux._cantidad - valor;
             return tiempoAux;
         }
 
         public static Tiempo operator -(Tiempo tiempoAux, Tiempo time)
         {
-            tiempoAux.cantidad = tiempoAux.cantidad - time.cantidad;
+            tiempoAux._cantidad = tiempoAux._cantidad - time._cantidad;
             return tiempoAux;
         }
 
         public static bool operator ==(Tiempo tiempoAux, int valor)
         {
-            if (tiempoAux.cantidad == valor)
+            if (tiempoAux._cantidad == valor)
                 return true;
             return false;
         }
 
         public static bool operator ==(Tiempo tiempoAux, Tiempo time)
         {
-            if (tiempoAux.cantidad == time.cantidad)
+            if (tiempoAux._cantidad == time._cantidad)
                 return true;
             return false;
         }
 
         public static bool operator !=(Tiempo tiempoAux, int valor)
         {
-            if (tiempoAux.cantidad != valor)
+            if (tiempoAux._cantidad != valor)
                 return true;
             return false;
         }
 
         public static bool operator !=(Tiempo tiempoAux, Tiempo time)
         {
-            if (tiempoAux.cantidad != time.cantidad)
+            if (tiempoAux._cantidad != time._cantidad)
+                return true;
+            return false;
+        }
+
+        public static bool operator <(Tiempo tiempoAux, int valor)
+        {
+            if (tiempoAux._cantidad < valor)
+                return true;
+            return false;
+        }
+
+        public static bool operator <(Tiempo tiempoAux, Tiempo time)
+        {
+            if (tiempoAux._cantidad < time._cantidad)
+                return true;
+            return false;
+        }
+
+        public static bool operator >(Tiempo tiempoAux, int valor)
+        {
+            if (tiempoAux._cantidad > valor)
+                return true;
+            return false;
+        }
+
+        public static bool operator >(Tiempo tiempoAux, Tiempo time)
+        {
+            if (tiempoAux._cantidad > time._cantidad)
                 return true;
             return false;
         }
@@ -77,6 +105,11 @@ namespace Clase_3
         public static implicit operator Tiempo(int valor)
         {
             return new Tiempo(valor);
+        }
+
+        public static explicit operator int(Tiempo time)
+        {
+            return time._cantidad;
         }
     }
 }

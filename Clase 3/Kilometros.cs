@@ -8,63 +8,63 @@ namespace Clase_3
 {
     public class Kilometros
     {
-        public int cantidad;
+        private int _cantidad;
 
-        public Kilometros(int cant)
+        private Kilometros(int cant)
         {
-            this.cantidad = cant;
+            this._cantidad = cant;
         }
 
 
         //SOBRECARGA DE OPERADORES
         public static Kilometros operator +(Kilometros KmAux, int valor)
         {
-            KmAux.cantidad = KmAux.cantidad + valor;
+            KmAux._cantidad = KmAux._cantidad + valor;
             return KmAux;
         }
 
         public static Kilometros operator +(Kilometros KmAux, Kilometros km)
         {
-            KmAux.cantidad = KmAux.cantidad + km.cantidad;
+            KmAux._cantidad = KmAux._cantidad + km._cantidad;
             return KmAux;
         }
 
         public static Kilometros operator -(Kilometros KmAux, int valor)
         {
-            KmAux.cantidad = KmAux.cantidad - valor;
+            KmAux._cantidad = KmAux._cantidad - valor;
             return KmAux;
         }
 
         public static Kilometros operator -(Kilometros KmAux, Kilometros km)
         {
-            KmAux.cantidad = KmAux.cantidad - km.cantidad;
+            KmAux._cantidad = KmAux._cantidad - km._cantidad;
             return KmAux;
         }
 
         public static bool operator ==(Kilometros kmAux, int valor)
         {
-            if (kmAux.cantidad == valor)
+            if (kmAux._cantidad == valor)
                 return true;
             return false;
         }
 
         public static bool operator ==(Kilometros kmAux, Kilometros km)
         {
-            if (kmAux.cantidad == km.cantidad)
+            if (kmAux._cantidad == km._cantidad)
                 return true;
             return false;
         }
 
         public static bool operator !=(Kilometros kmAux, int valor)
         {
-            if (kmAux.cantidad != valor)
+            if (kmAux._cantidad != valor)
                 return true;
             return false;
         }
 
         public static bool operator !=(Kilometros kmAux, Kilometros km)
         {
-            if (kmAux.cantidad != km.cantidad)
+            if (kmAux._cantidad != km._cantidad)
                 return true;
             return false;
         }
@@ -72,6 +72,11 @@ namespace Clase_3
         public static implicit operator Kilometros(int valor)
         {
             return new Kilometros(valor);
+        }
+
+        public static explicit operator int(Kilometros km)
+        {
+            return km._cantidad;
         }
     }
 }
