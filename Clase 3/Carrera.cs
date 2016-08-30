@@ -96,6 +96,7 @@ namespace Clase_3
                 this.auto5.agregar(timeAux = randomTiempo.Next(10, 100));
                 this.auto6.agregar(timeAux = randomTiempo.Next(10, 100));
             }
+            this.MostrarCarrera();
         }
 
         public void correrCarrera(Kilometros km)
@@ -112,6 +113,7 @@ namespace Clase_3
                 this.auto5.agregar(auxKm = randomKilometros.Next(10, 100));
                 this.auto6.agregar(auxKm = randomKilometros.Next(10, 100));
             }
+            this.MostrarCarrera();
         }
 
         public void MostrarCarrera()
