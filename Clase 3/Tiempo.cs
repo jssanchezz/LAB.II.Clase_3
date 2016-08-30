@@ -68,5 +68,15 @@ namespace Clase_3
                 return true;
             return false;
         }
+
+        //Como parsear un entero a objeto
+        //Existe la forma IMPLICIT y EXPLICIT
+        //IMPLICIT contiene la forma EXPLICIT, es decir que si la sobrecarga es IMPLICITA, tambien podemos utilizar la explicita
+        //Ej. del siguente metodo: Tiempo time; - time = 33; (IMPLICITA)
+        //Tiempo time; - time =(Tiempo) 33; (EXPLICITA)
+        public static implicit operator Tiempo(int valor)
+        {
+            return new Tiempo(valor);
+        }
     }
 }

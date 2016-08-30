@@ -82,9 +82,9 @@ namespace Clase_3
             }
         }*/
 
-        public void MostrarResultadosCarrera()
+        public void correrCarrera(Tiempo time)
         {
-
+                        
         }
 
         public void MostrarCarrera()

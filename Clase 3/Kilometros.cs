@@ -68,5 +68,10 @@ namespace Clase_3
                 return true;
             return false;
         }
+
+        public static implicit operator Kilometros(int valor)
+        {
+            return new Kilometros(valor);
+        }
     }
 }
