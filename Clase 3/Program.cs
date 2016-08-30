@@ -19,9 +19,23 @@ namespace Clase_3
 
             //Rueda nuevarueda = new Rueda();*/
 
-            Rueda otrarueda = new Rueda(39);
+            //Rueda otrarueda = new Rueda(39);
 
-            //Carrera nuevacarrera = new Carrera();
+            Carrera nuevacarrera = new Carrera();
+
+            Tiempo nuevotiempo = new Tiempo(30);
+
+            nuevacarrera.correrCarrera(nuevotiempo);
+
+            Kilometros nuevokm = new Kilometros(30);
+
+            nuevacarrera.correrCarrera(nuevokm);
+
+            nuevacarrera.MostrarCarrera();
+
+            nuevotiempo = nuevotiempo + 10;
+
+            Console.Write(nuevotiempo.cantidad);
 
             //nuevacarrera.MostrarCarrera();
 

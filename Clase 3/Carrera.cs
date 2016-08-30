@@ -16,6 +16,7 @@ namespace Clase_3
         public Auto auto6;
 
         private static Random randomKilometros;
+        private static Random randomTiempo;
         
         public Carrera()
         {
@@ -30,6 +31,7 @@ namespace Clase_3
         static Carrera()
         {
             randomKilometros = new Random();
+            randomTiempo = new Random();
         }
 
         public void PorTiempo(int minutos)
@@ -49,6 +51,37 @@ namespace Clase_3
             
         }
 
+        public void correrCarrera(Kilometros km)
+        {
+            int contador;
+
+            for (contador = 0 ; contador < km.cantidad ; contador ++)
+            {
+                this.auto1.agregarKilometro(randomKilometros.Next(10,100));
+                this.auto2.agregarKilometro(randomKilometros.Next(10,100));
+                this.auto3.agregarKilometro(randomKilometros.Next(10,100));
+                this.auto4.agregarKilometro(randomKilometros.Next(10,100));
+                this.auto5.agregarKilometro(randomKilometros.Next(10,100));
+                this.auto6.agregarKilometro(randomKilometros.Next(10,100));
+            }
+
+        }
+
+        public void correrCarrera(Tiempo time)
+        {
+            int contador;
+
+            for( contador = 0; contador < time.cantidad ; contador++)
+            {
+                this.auto1.agregarTiempo(randomTiempo.Next(10,100));
+                this.auto2.agregarTiempo(randomTiempo.Next(10,100));
+                this.auto3.agregarTiempo(randomTiempo.Next(10,100));
+                this.auto4.agregarTiempo(randomTiempo.Next(10,100));
+                this.auto5.agregarTiempo(randomTiempo.Next(10,100));
+                this.auto6.agregarTiempo(randomTiempo.Next(10,100));
+            }
+        }
+
         public void MostrarResultadosCarrera()
         {
 
@@ -56,7 +89,6 @@ namespace Clase_3
 
         public void MostrarCarrera()
         {
-            this.PorTiempo(5);
             this.auto1.MostrarAuto();
             this.auto2.MostrarAuto();
             this.auto3.MostrarAuto();
