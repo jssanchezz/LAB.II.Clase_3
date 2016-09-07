@@ -44,11 +44,20 @@ namespace Clase_3
             Auto.randomMarcas = new Random();
         }
 
-        public void MostrarAuto()
+        public string MostrarAuto()
         {
-            Console.WriteLine("El fabricante es: " + this.Fabricante);
-            Console.WriteLine("Kilometros recorridos: " + (int)this.kilometrosRecorridos);
-            Console.WriteLine("Tiempo demorado: " + (int)this.tiempoDemorado);
+            return returnString();            
+        }
+
+        public string returnString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine("El fabricante es: " + this.Fabricante);
+            sb.AppendLine("Kilometros recorridos: " + (int)this.kilometrosRecorridos);
+            sb.AppendLine("Tiempo demorado: " + (int)this.tiempoDemorado);
+
+            return sb.ToString();
         }
 
         public void agregar(Tiempo time)
@@ -59,6 +68,12 @@ namespace Clase_3
         public void agregar(Kilometros km)
         {
             this.kilometrosRecorridos = this.kilometrosRecorridos + km;
+        }
+
+        public void volverAZero()
+        {
+            this.kilometrosRecorridos = 0;
+            this.tiempoDemorado = 0;
         }
     }
 }
